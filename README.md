@@ -1,13 +1,12 @@
 # MHC-I-EpiPred-ESM2
 ## Model descriptions
-**PPPSL-ESM2**(PPPSL, Prediction of prokaryotic protein subcellular localization) is a protein language model fine-tuned from [**ESM2**](https://github.com/facebookresearch/esm) pretrained model [(***facebook/esm2_t36_3B_UR50D***)](https://huggingface.co/facebook/esm2_t36_3B_UR50D) on a prokaryotic protein subcellular localization dataset.   
+**MHC-I-EpiPred-ESM2**(MHC-I-EpiPred, MHC I molecular epitope prediction) is a protein language model fine-tuned from [**ESM2**](https://github.com/facebookresearch/esm) pretrained model [(***facebook/esm2_t36_3B_UR50D***)](https://huggingface.co/facebook/facebook/esm2_t33_650M_UR50D) on a T cell epitope with Immunogenicity score dataset.   
 
-**PPPSL-ESM2** achieved the following results:  
-Train Loss: 0.0015  
-Train Accuracy: 0.9893  
-Validation Loss: 0.0184  
-Validation Accuracy: 0.9702  
-Epoch: 20 
+**MHC-I-EpiPred-ESM2** achieved the following results:  
+Everage Train Loss （mse）: 0.0547  
+Everage Validation Loss (mse): 0.0535  
+Epoch: 3
+
 # The dataset for training **PPPSL-ESM2**
 The full dataset contains 11,970 protein sequences, including Cellwall (87), Cytoplasmic (6,905), CYtoplasmic Membrane (2,567), Extracellular (1,085), Outer Membrane (758), and Periplasmic (568).
 The highly imbalanced sample sizes across the six categories in this dataset pose a significant challenge for classification.  
