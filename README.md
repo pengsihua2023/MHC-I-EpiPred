@@ -13,8 +13,8 @@ The original data we obtained comes from the data in the paper by [Lee CH et al.
 
 The dataset was downloaded from GtHub at [**TRAP**](https://github.com/ChloeHJ/TRAP/blob/main/data/pathogenic_db.csv). 
 
-# Model training code at GitHub
-https://github.com/pengsihua2023/MHC-I-EpiPred-ESM2
+# Model at Hugging Face
+[https://github.com/pengsihua2023/MHC-I-EpiPred-ESM2](https://huggingface.co/sihuapeng/MHC-I-EpiPred-ESM2)   
 
 # How to use **MHC-I-EpiPred-ESM2**
 ### An example
