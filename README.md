@@ -1,6 +1,6 @@
 # MHC-I-EpiPred-ESM2
 ## Model descriptions
-**MHC-I-EpiPred-ESM2**(MHC-I-EpiPred, MHC I molecular epitope prediction) is a protein language model fine-tuned from [**ESM2**](https://github.com/facebookresearch/esm) pretrained model [(***facebook/esm2_t36_3B_UR50D***)](https://huggingface.co/facebook/facebook/esm2_t33_650M_UR50D) on a T cell epitope with Immunogenicity score dataset.   
+**MHC-I-EpiPred-ESM2**(MHC-I-EpiPred, MHC I molecular epitope prediction) is a protein language model fine-tuned from [**ESM2**](https://github.com/facebookresearch/esm) pretrained model [(***facebook/esm2_t33_650M_UR50D***)](https://huggingface.co/facebook/facebook/esm2_t33_650M_UR50D) on a T cell epitope with Immunogenicity score dataset.   
 
 **MHC-I-EpiPred-ESM2** is a regression model for predicting the Immunogenicity score using a potential epitope peptide as an input.   
 
