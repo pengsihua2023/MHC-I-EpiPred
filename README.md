@@ -1,24 +1,22 @@
-# MHC-I-EpiPred-ESM2
-## Model descriptions
-**MHC-I-EpiPred-ESM2**(MHC-I-EpiPred, MHC I molecular epitope prediction) is a protein language model fine-tuned from [**ESM2**](https://github.com/facebookresearch/esm) pretrained model [(***facebook/esm2_t33_650M_UR50D***)](https://huggingface.co/facebook/esm2_t33_650M_UR50D) on a T cell epitope with Immunogenicity score dataset.   
+# Model description
+**MHC-I-EpiPred-ESM2** (MHC-I-EpiPred, MHC I molecular epitope prediction) is a protein language model fine-tuned from [**ESM2**](https://github.com/facebookresearch/esm) pretrained model [(***facebook/esm2_t33_650M_UR50D***)](https://huggingface.co/facebook/esm2_t33_650M_UR50D) on a T cell epitope with Immunogenicity score dataset.    
 
-**MHC-I-EpiPred-ESM2** is a regression model for predicting the Immunogenicity score using a potential epitope peptide as an input.    
+**MHC-I-EpiPred-ESM2** is a regression model for predicting the Immunogenicity score using a potential epitope peptide as an input. 
 
 **MHC-I-EpiPred-ESM2** achieved the following results:  
 Everage Train Loss （mse）: 0.0547  
 Everage Validation Loss (mse): 0.0535  
-Epoch: 3
+Epoch: 3 
 
-# The dataset for training **PPPSL-ESM2**
-The full dataset contains 11,970 protein sequences, including Cellwall (87), Cytoplasmic (6,905), CYtoplasmic Membrane (2,567), Extracellular (1,085), Outer Membrane (758), and Periplasmic (568).
-The highly imbalanced sample sizes across the six categories in this dataset pose a significant challenge for classification.  
+# The dataset for training **MHC-I-EpiPred-ESM2**
+The original data we obtained comes from the data in the paper by [Lee CH et al.](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-023-01225-z) The data is in a CSV file with a total of 9 columns with a sample size of 100,097. We used the first column (amino acid sequences), the second column (immunogenicity, positive or negative), and the ninth column (immunogenicity score). We used these three columns as input to fine-tune the ESM2 pre-trained model and built a regression model. Using this regression model, by inputting potential epitope amino acid sequences, we can predict the immunogenicity score of the potential epitope, and then determine whether it is an epitope based on the set threshold.
 
-The dataset was downloaded from the website at [**DeepLocPro - 1.0**](https://services.healthtech.dtu.dk/services/DeepLocPro-1.0/). 
+The dataset was downloaded from GtHub at [**TRAP**](https://github.com/ChloeHJ/TRAP/blob/main/data/pathogenic_db.csv). 
 
 # Model training code at GitHub
-https://github.com/pengsihua2023/PPPSL-ESM2
+https://github.com/pengsihua2023/MHC-I-EpiPred-ESM2
 
-# How to use **PPPSL-ESM2**
+# How to use **MHC-I-EpiPred-ESM2**
 ### An example
 Pytorch and transformers libraries should be installed in your system.  
 ### Install pytorch
