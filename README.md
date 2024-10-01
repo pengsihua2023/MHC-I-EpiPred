@@ -14,9 +14,9 @@ The original data we obtained comes from the data in the paper by [Lee CH et al.
 The dataset was downloaded from GtHub at [**TRAP**](https://github.com/ChloeHJ/TRAP/blob/main/data/pathogenic_db.csv). 
 
 # Model at Hugging Face
-[https://github.com/pengsihua2023/MHC-I-EpiPred-ESM2](https://huggingface.co/sihuapeng/MHC-I-EpiPred)   
+[https://github.com/pengsihua2023/MHC-I-EpiPred](https://huggingface.co/sihuapeng/MHC-I-EpiPred)   
 
-# How to use **MHC-I-EpiPred-ESM2**
+# How to use **MHC-I-EpiPred**
 ### An example
 Pytorch and transformers libraries should be installed in your system.  
 ### Install pytorch
