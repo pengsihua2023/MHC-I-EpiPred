@@ -8,13 +8,13 @@ Training Loss (mse):
 Training Accuracy:   
 Evaluation Loss (mse):     
 Evaluation Accuracy:     
-Epochs: 324  
+Epochs:   
 # The dataset for training **MHC-I-EpiPred**
 The original data was downloaded from IEDB data base at https://www.iedb.org/home_v3.php.  
 The full data can be downloaded at  https://www.iedb.org/downloader.php?file_name=doc/tcell_full_v3.zip  
 This dataset comprises 543,717 T-cell epitope entries, spanning a variety of species and infections caused by diverse viruses. The epitope information included encompasses a broad range of potential sources, including data relevant to disease immunotherapy.  
 
-Finally, the dataset we used to train the model contains 60,256 positive and negative samples, which is stored in https://github.com/pengsihua2023/MHC-II-EpiPred/tree/main/data.   
+Finally, the dataset we used to train the model contains 41,060 positive and negative samples, which is stored in https://github.com/pengsihua2023/MHC-II-EpiPred/tree/main/data.   
 
 # Model at Hugging Face
 https://huggingface.co/sihuapeng/MHC-I-TCEpiPred   
