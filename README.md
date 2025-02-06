@@ -1,15 +1,15 @@
 # Model description
-**MHC-II-EpiPred** (MHC-II-EpiPred, T cell MHC II molecular epitope prediction) is a protein language model fine-tuned from [**ESM2**](https://github.com/facebookresearch/esm) pretrained model [(***facebook/esm2_t33_650M_UR50D***)](https://huggingface.co/facebook/esm2_t33_650M_UR50D).    
+**MHC-I-EpiPred** (MHC-II-EpiPred, T cell MHC I molecular epitope prediction) is a protein language model fine-tuned from [**ESM2**](https://github.com/facebookresearch/esm) pretrained model [(***facebook/esm2_t33_650M_UR50D***)](https://huggingface.co/facebook/esm2_t33_650M_UR50D).    
 
-**MHC-II-EpiPred** is a classification model that uses potential epitope peptides as input to predict T cell epitopes of MHC-II. The model is fed with a peptide sequence, and the output of the model is whether the peptide is a T cell epitope of MHC-II.  
+**MHC-I-EpiPred** is a classification model that uses potential epitope peptides as input to predict T cell epitopes of MHC-II. The model is fed with a peptide sequence, and the output of the model is whether the peptide is a T cell epitope of MHC-I.  
 
 **MHC-II-EpiPred** achieved the following results:  
-Training Loss (mse): 0.1407   
-Training Accuracy: 0.9898  
-Evaluation Loss (mse): 0.0836    
-Evaluation Accuracy: 0.9703    
+Training Loss (mse):    
+Training Accuracy:   
+Evaluation Loss (mse):     
+Evaluation Accuracy:     
 Epochs: 324  
-# The dataset for training **MHC-II-EpiPred**
+# The dataset for training **MHC-I-EpiPred**
 The original data was downloaded from IEDB data base at https://www.iedb.org/home_v3.php.  
 The full data can be downloaded at  https://www.iedb.org/downloader.php?file_name=doc/tcell_full_v3.zip  
 This dataset comprises 543,717 T-cell epitope entries, spanning a variety of species and infections caused by diverse viruses. The epitope information included encompasses a broad range of potential sources, including data relevant to disease immunotherapy.  
@@ -17,7 +17,7 @@ This dataset comprises 543,717 T-cell epitope entries, spanning a variety of spe
 Finally, the dataset we used to train the model contains 60,256 positive and negative samples, which is stored in https://github.com/pengsihua2023/MHC-II-EpiPred/tree/main/data.   
 
 # Model at Hugging Face
-https://huggingface.co/sihuapeng/MHC-II-TCEpiPred   
+https://huggingface.co/sihuapeng/MHC-I-TCEpiPred   
 
 # How to use **MHC-II-EpiPred**
 ### An example
