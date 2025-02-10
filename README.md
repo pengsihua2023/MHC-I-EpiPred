@@ -4,11 +4,11 @@
 **MHC-I-EpiPred** is a classification model that uses potential epitope peptides as input to predict T cell epitopes of MHC-I. The model is fed with a peptide sequence, and the output of the model is whether the peptide is a T cell epitope of MHC-I.  
 
 **MHC-I-EpiPred** achieved the following results:  
-Training Loss (mse):    
-Training Accuracy:   
-Evaluation Loss (mse):     
-Evaluation Accuracy:     
-Epochs:   
+Training Loss (mse): 0.1044
+Training Accuracy: 98.99%
+Evaluation Loss (mse): 0.1576
+Evaluation Accuracy: 97.04%
+Epochs: 492  
 # The dataset for training **MHC-I-EpiPred**
 The original data was downloaded from IEDB data base at https://www.iedb.org/home_v3.php.  
 The full data can be downloaded at  https://www.iedb.org/downloader.php?file_name=doc/tcell_full_v3.zip  
