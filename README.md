@@ -16,6 +16,7 @@ Training Loss (mse): 0.1044
 Training Accuracy: 98.99%  
 Evaluation Loss (mse): 0.1576  
 Evaluation Accuracy: 97.04%  
+Avg. F1 Score: 0.9894  
 Epochs: 492 
 Train runtime：88.66 Hours  
 GPUs used: 4 H100 with 80G Memory  
