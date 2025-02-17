@@ -17,6 +17,8 @@ Training Accuracy: 98.99%
 Evaluation Loss (mse): 0.1576  
 Evaluation Accuracy: 97.04%  
 Epochs: 492 
+Train runtime：88.66 Hours  
+GPUs used: 4 H100 with 80G Memory  
 
 ![Figure_2](https://github.com/user-attachments/assets/e518ab8b-d4f4-4e8b-b817-093f8ab16ea1)  
 igure 2 Training and Evaluation Loss during the training process of the MHC-I-EpiPred model
