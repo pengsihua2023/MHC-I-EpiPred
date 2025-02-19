@@ -12,9 +12,9 @@ Finally, the dataset we used to train the model contains 41,060 positive and neg
 
 # Results
 **MHC-I-EpiPred** achieved the following results:  
-Training Loss (mse): 0.1044  
+Training Loss (cross-entropy loss, CEL): 0.1044  
 Training Accuracy: 98.99%  
-Evaluation Loss (mse): 0.1576  
+Evaluation Loss (cross-entropy loss, CEL): 0.1576  
 Evaluation Accuracy: 97.04%   
 Avg. F1 Score: 98.94%    
 Epochs: 492 
